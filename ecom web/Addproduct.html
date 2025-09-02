@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <title>Document</title>
+  <link rel="icon" type="image/svg+xml" href="https://cdn-icons-png.flaticon.com/512/8866/8866156.png" />
+</head>
+
+<body>
+  <!-- ---NAV--- -->
+  <div class="flex justify-between bg-gray-900 w-full h-20 items-center px-6">
+    <div class="flex items-center space-x-2">
+      <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/8866/8866156.png" alt="Logo" />
+      <p class="hidden md:block text-white text-3xl cursor-pointer">
+        E-Commerce
+      </p>
+    </div>
+
+    <div class="hidden lg:flex text-white space-x-15 mx-3">
+      <a class="hover:text-blue-400 font-bold" href="Home.html">Home</a>
+      <a class="hover:text-blue-400 font-bold" href="About.html">About</a>
+      <a class="hover:text-blue-400 font-bold" href="Contact.html">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="wishlist.html">
+        <i class="fa-solid fa-bucket text-4xl text-white hover:text-blue-400"></i></a>
+      <a href="Addcart.html">
+        <i class="fas fa-cart-plus text-4xl text-white hover:text-blue-400"></i></a>
+      <a href="AdminDashboard.html"><button
+          class="hidden md:block p-3 bg-blue-500 rounded-[7px] text-white hover:bg-blue-700 cursor-pointer">
+          Admin Dashboard
+        </button>
+      </a>
+      <div class="md:hidden text-white text-3xl">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---sidebar--- -->
+  <div class="flex">
+    <div class="border bg-gray-900 h-[40rem] w-[20rem] border-gray-900 px-5 py-4 mt-[0.4px] hidden md:flex flex-col">
+      <a href="Dashboard.html"><button
+          class="text-white text-xl font-semibold px-4 py-2 hover:bg-gray-500 transition-colors duration-300 rounded-[5px]">
+          Dashboard
+        </button></a>
+      <a href="Addproduct.html"><button
+          class="text-white text-xl font-semibold px-4 py-2 hover:bg-gray-500 transition-colors duration-300 rounded-[5px]">
+          Add Product
+        </button></a>
+      <a href="View.html"><button
+          class="text-white text-xl font-semibold px-4 py-2 hover:bg-gray-500 transition-colors duration-300 rounded-[5px]">
+          View Product
+        </button></a>
+      <a href="AdminDashboard.html"><button
+          class="text-white text-xl font-semibold px-4 py-2 hover:bg-gray-500 transition-colors duration-300 rounded-[5px]">
+          Logout
+        </button></a>
+    </div>
+
+    <!-- ---MAIN--- -->
+    <div class="w-full p-4 bg-white">
+      <p class="text-4xl font-bold text-center my-7">View Product</p>
+      <div class="flex gap-2 ">
+        <div
+          class="border border-black bg-white rounded-[10px] w-[25rem] h-[26rem] hidden md:flex justify-center items-center">
+          <p>No Image</p>
+        </div>
+        <div class="border border-white bg-white w-full h-[26rem] space-y-4  ">
+          <input class="md:hidden border border-black w-full h-[3rem] rounded-[10px] hover:dark:border-l-black"
+            type="text" placeholder="   No Image">
+          <input class="border border-black w-full h-[3rem] rounded-[10px] hover:dark:border-l-black" type="text"
+            placeholder="   Product Title">
+          <input class="border border-black w-full h-[3rem] rounded-[10px] hover:dark:border-l-black" type="text"
+            placeholder="   Product Price">
+          <textarea class="w-full border border-black h-24 px-3 py-2 rounded-lg hover:dark:border-l-black"
+            placeholder="Product Description" rows="4"></textarea>
+          <select name="category" class="w-full h-[3rem]  border rounded-[10px]">
+            <option value="">Select Category</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Home &Furniture">Home & Furniture</option>
+            <option value="Beauty &Personal Care">Beauty & Personal Care</option>
+            <option value="Toys & Games">Toys & Games</option>
+            <option value="Sports & Outdoors">Sports & Outdoors</option>
+          </select>
+          <input class="border border-black w-full h-[3rem] rounded-[10px] hover:dark:border-l-black" type="text"
+            placeholder="   Choose file No file choosen">
+          <button class=" w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-70 hover:bg-blue-600 ">
+            Add Product
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <!-- ---Footer--- -->
+  <div class="bg-gray-900 px-6 py-10">
+    <div class="flex md:flex-row flex-col justify-between sm:flex-wrap">
+      <div class="">
+        <p class="text-white text-2xl font-bold mb-3">E-Commerce</p>
+        <p class="text-gray-500">
+          Your one-stop shop for the latest trends in <br />
+          fashion, electronics, and lifestyle. Shop smart. <br />
+          Shop easy.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <div class="text-white text-2xl font-bold mb-2">Qick links</div>
+        <a class="text-white" href="Home.html">Home</a>
+        <a class="text-white" href="About.html">About</a>
+        <a class="text-white" href="Contact.html">Contacts</a>
+        <a class="text-white" href="AdminDashboard.html">Dashboard</a>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="text-white text-2xl font-bold mb-2">
+          Customer Services
+        </div>
+        <a class="text-white" href="">Privacy Policy</a>
+        <a class="text-white" href="">Terms & Conditons</a>
+        <a class="text-white" href="">Help & Support</a>
+      </div>
+
+      <div class="flex flex-wrap flex-col gap-2">
+        <div class="text-white text-2xl font-bold mb-2">Contact Us</div>
+        <a href="" class="text-white"><i class="fa-solid fa-location-dot text-blue-700"></i>
+          Lahore,pakistan</a>
+        <a href="" class="text-white"><i class="fa-solid fa-envelope text-blue-700"></i>
+          support@gmail.com</a>
+        <a href="" class="text-white"><i class="fa-solid fa-phone text-blue-700"></i> +090078601</a>
+        <div class="flex gap-4 text-white text-xl">
+          <i class="fa-brands fa-facebook-f text-white text-xl"></i>
+          <i class="fa-brands fa-instagram text-white text-xl"></i>
+          <i class="fa-brands fa-x-twitter text-white text-xl"></i>
+          <i class="fa-brands fa-github text-white text-xl"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col justify-center text-center mt-2">
+      <hr class="border-gray-600 border w-[90%] mt-5" />
+
+      <div class="text-gray-500 mt-2">
+        © 2025 E-Commerce. All rights reserved.
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

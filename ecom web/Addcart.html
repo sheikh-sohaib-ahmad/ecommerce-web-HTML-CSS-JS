@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://cdn-icons-png.flaticon.com/512/8866/8866156.png"
+    />
+  </head>
+
+  <body>
+    <!-- ---NAV--- -->
+    <div class="flex justify-between bg-gray-900 w-full h-20 items-center px-6">
+      <div class="flex items-center space-x-2">
+        <img
+          class="w-16 cursor-pointer"
+          src="https://cdn-icons-png.flaticon.com/512/8866/8866156.png"
+          alt="Logo"
+        />
+        <p class="hidden md:block text-white text-3xl cursor-pointer">
+          E-Commerce
+        </p>
+      </div>
+
+      <div class="hidden lg:flex text-white space-x-15 mx-3">
+        <a class="hover:text-blue-200 font-bold" href="Home.html">Home</a>
+        <a class="hover:text-blue-200 font-bold" href="About.html">About</a>
+        <a class="hover:text-blue-200 font-bold" href="Contact.html">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="wishlist.html">
+          <i
+            class="fa-solid fa-bucket text-4xl text-white hover:text-blue-200"
+          ></i
+        ></a>
+        <a href="Addcart.html">
+          <i
+            class="fas fa-cart-plus text-4xl text-white hover:text-blue-200"
+          ></i
+        ></a>
+        <a href="AdminDashboard.html"
+          ><button
+            class="hidden md:block p-3 bg-blue-500 rounded-[7px] text-white hover:bg-blue-700 cursor-pointer"
+          >
+            Admin Dashboard
+          </button>
+        </a>
+        <div class="md:hidden text-white text-3xl">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ---MAIN--- -->
+    <p class="text-3xl font-bold mt-7 text-center mb-9">Your Cart</p>
+
+    <div class="w-full p-4 bg-white overflow-x-auto">
+      <table class="sm:w-full md:w-full">
+        <tr class="border border-gray-200">
+          <th class="border bg-gray-200 px-3 py-2">Image</th>
+          <th class="border bg-gray-200 px-3 py-2">Title</th>
+          <th class="border bg-gray-200 px-3 py-2">Price</th>
+          <th class="border bg-gray-200 px-3 py-2">Quantity</th>
+          <th class="border bg-gray-200 px-3 py-2">Subtotal</th>
+          <th class="border bg-gray-200 px-3 py-2">Action</th>
+        </tr>
+        <tbody>
+          <tr class="">
+            <td
+              class="border border-gray-200 px-3 py-2 flex justify-center items-center"
+            >
+              <img
+                class="w-16 h-16"
+                src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                alt=""
+              />
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">
+              Mens casual premium
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">$22.4</td>
+            <td class="border border-gray-200 text-center px-1 py-2">
+              <div class="flex justify-center">
+                <button class="bg-gray-300 px-2 py-1">-</button>
+                <p class="px-3 py-1">1</p>
+                <button class="bg-gray-300 px-2 py-1">+</button>
+              </div>
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">$22.4</td>
+            <td class="border border-gray-200 text-center px-3 py-2">
+              <button
+                class="text-white bg-red-600 px-3 py-2 rounded-[4px] text-center"
+              >
+                Remove
+              </button>
+            </td>
+          </tr>
+          <tr class="">
+            <td
+              class="border border-gray-200 px-3 py-2 flex justify-center items-center"
+            >
+              <img
+                class="w-16 h-16"
+                src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+                alt=""
+              />
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">
+              Mens Cotton Jacket
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">$55.4</td>
+            <td class="border border-gray-200 text-center px-1 py-2">
+              <div class="flex justify-center">
+                <button class="bg-gray-300 px-2 py-1">-</button>
+                <p class="px-3 py-1">1</p>
+                <button class="bg-gray-300 px-2 py-1">+</button>
+              </div>
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">$55.4</td>
+            <td class="border border-gray-200 text-center px-3 py-2">
+              <button
+                class="text-white bg-red-600 px-3 py-2 rounded-[4px] text-center"
+              >
+                Remove
+              </button>
+            </td>
+          </tr>
+          <tr class="">
+            <td
+              class="border border-gray-200 px-3 py-2 flex justify-center items-center"
+            >
+              <img
+                class="w-16 h-16"
+                src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+                alt=""
+              />
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">
+              Fjallraven - Foldsac
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">$109.4</td>
+            <td class="border border-gray-200 text-center px-1 py-2">
+              <div class="flex justify-center">
+                <button class="bg-gray-300 px-2 py-1">-</button>
+                <p class="px-3 py-1">1</p>
+                <button class="bg-gray-300 px-2 py-1">+</button>
+              </div>
+            </td>
+            <td class="border border-gray-200 text-center px-3 py-2">$109.4</td>
+            <td class="border border-gray-200 text-center px-3 py-2">
+              <button
+                class="text-white bg-red-600 px-3 py-2 rounded-[4px] text-center"
+              >
+                Remove
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="flex justify-between mt-3">
+        <p class="text-3xl font-semibold">Total: $188.24</p>
+        <button class="bg-blue-500 px-5 py-2 text-white rounded-[5px]">
+          Checkout
+        </button>
+      </div>
+    </div>
+
+    <!-- ---Footer--- -->
+    <div class="bg-gray-900 px-6 py-10 mt-15">
+      <div class="flex md:flex-row flex-col justify-between sm:flex-wrap">
+        <div class="">
+          <p class="text-white text-2xl font-bold mb-3">E-Commerce</p>
+          <p class="text-gray-500">
+            Your one-stop shop for the latest trends in <br />
+            fashion, electronics, and lifestyle. Shop smart. <br />
+            Shop easy.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <div class="text-white text-2xl font-bold mb-2">Qick links</div>
+          <a class="text-white" href="Home.html">Home</a>
+          <a class="text-white" href="About.html">About</a>
+          <a class="text-white" href="Contact.html">Contacts</a>
+          <a class="text-white" href="AdminDashboard.html">Dashboard</a>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="text-white text-2xl font-bold mb-2">
+            Customer Services
+          </div>
+          <a class="text-white" href="">Privacy Policy</a>
+          <a class="text-white" href="">Terms & Conditons</a>
+          <a class="text-white" href="">Help & Support</a>
+        </div>
+
+        <div class="flex flex-wrap flex-col gap-2">
+          <div class="text-white text-2xl font-bold mb-2">Contact Us</div>
+          <a href="" class="text-white"
+            ><i class="fa-solid fa-location-dot text-blue-700"></i>
+            Lahore,pakistan</a
+          >
+          <a href="" class="text-white"
+            ><i class="fa-solid fa-envelope text-blue-700"></i>
+            support@gmail.com</a
+          >
+          <a href="" class="text-white"
+            ><i class="fa-solid fa-phone text-blue-700"></i> +090078601</a
+          >
+          <div class="flex gap-4 text-white text-xl">
+            <i class="fa-brands fa-facebook-f text-white text-xl"></i>
+            <i class="fa-brands fa-instagram text-white text-xl"></i>
+            <i class="fa-brands fa-x-twitter text-white text-xl"></i>
+            <i class="fa-brands fa-github text-white text-xl"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center text-center mt-2">
+        <hr class="border-gray-600 border w-[90%] mt-5" />
+
+        <div class="text-gray-500 mt-2">
+          © 2025 E-Commerce. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Document</title>
+    <link rel="icon" type="image/svg+xml" href="https://cdn-icons-png.flaticon.com/512/8866/8866156.png" />
+</head>
+
+<body>
+    <!-- ---NAV--- -->
+    
+    <!-- ---MAIN--- -->
+
+    <div class="flex justify-center p-4 mt-30">
+        <div class="border border-white w-full max-w-lg bg-white shadow-2xl rounded-md px-4 sm:px-8 py-12">
+            <p class="text-blue-600 text-center text-2xl sm:text-3xl font-bold">
+                Login
+            </p>
+
+            <form id="submit-form" class="mt-8 space-y-6">
+                <div>
+                    <label class="text-gray-700 font-bold mb-2">Email</label>
+                    <input
+                        id="email"
+                        class="w-full border border-black h-10 px-3 rounded-lg hover:border-blue-600 focus:border-blue-600"
+                        type="email" placeholder="name@example.com" />
+                </div>
+
+                <div>
+                    <label class="text-gray-700 font-bold mb-2">Password</label>
+                    <input
+                        id="password"
+                        class="w-full border border-black h-10 px-3 rounded-lg hover:border-blue-600 focus:border-blue-600"
+                        type="password" placeholder="Enter Password" />
+                </div>
+
+                    <button
+                        id="button"
+                        class="w-full mt-6 rounded-md bg-blue-600 py-3 text-white font-medium transition-colors duration-300 hover:bg-blue-700 cursor-pointer">
+                        Login
+                    </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ---Footer--- -->
+   
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>

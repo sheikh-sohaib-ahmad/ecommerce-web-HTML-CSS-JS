@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* Card container */
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  margin-top: 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Product image */
+.productCard img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.productCard .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Price */
+.productCard .price-style {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2563eb; /* blue-600 */
+  display: block;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Description */
+.productCard .desc {
+  font-size: 0.9rem;
+  color: #6b7280; /* gray-500 */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Buttons */
+.btn-cart,
+.btn-wishlist {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.btn-cart {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.btn-cart:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.btn-wishlist {
+  background-color: #dc2626; /* red-600 */
+}
+
+.btn-wishlist:hover {
+  background-color: #b91c1c; /* red-700 */
+}
+.quantity-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.quantity-control button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantity-control button:hover {
+  background: #2980b9;
+}
+
+.quantity-control span {
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
